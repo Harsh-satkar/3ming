@@ -1,0 +1,93 @@
+ @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+/* navbar- styling */
+a {
+    text-decoration: none;
+    /* text-align: left; */
+    color: aliceblue;
+    padding-left: 130px;
+    font-size: 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+   
+}
+
+.navbar {
+    background-color: black;
+    box-shadow: 0px 2px 30px aliceblue;
+}
+.container-fluid{
+    text-align: left;
+    padding-top: 50px;
+   
+}
+
+/* content head */
+.content {
+    position: relative;
+    top: 200px;
+    animation: fadeIn 4s 1;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Raleway', sans-serif;
+    color: aliceblue;
+}
+h1:hover {
+    text-shadow: 0px 2px 40px white;
+}
+.down-arrow {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    position: relative;
+    top: 74px;
+}
+button {
+    padding: 7px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    
+}
+
+/* footer */
+.footer {
+    position: relative;
+    color: aliceblue;
+    bottom: -360px;
+    font-size: 20px;
+}
+p {
+    position: absolute;
+    overflow: hidden;
+    transform: translateX(-100%);
+    animation: scrollText 20s linear infinite;
+
+}
+@keyframes scrollText {
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-100);}
+}
